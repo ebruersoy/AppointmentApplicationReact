@@ -85,7 +85,10 @@ class App extends Component {
                   toggleForm={this.toggleForm}
                   addAppointment={this.addAppointment}
                 />
-                <SearchAppointments />
+                <SearchAppointments
+                  orderBy={this.state.orderBy}
+                  orderDir={this.state.orderDir}
+                />
                 <ListAppointments
                   appointments={filteredApts}
                   deleteAppointments={this.deleteAppointments}
